@@ -5,7 +5,7 @@ module.exports = function (grunt) {
     grunt.registerMultiTask("merge-i18n", "Merge your json i18n files", function () {
         /*  prepare options  */
         var options = this.options({
-            separator: '-'
+            separator: null,
         });
 
         var getLanguage = function(filename) {
